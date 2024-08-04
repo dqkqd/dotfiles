@@ -10,6 +10,7 @@ return {
 		opts = {
 			servers = {
 				lua_ls = {},
+				clangd = {},
 			},
 		},
 		config = function(_, opts)
@@ -41,13 +42,9 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
 			ensure_installed = {
-				"clang-format",
 				"clangd",
 				"lua_ls",
 				"ruff",
-				"selene",
-				"stylua",
-				"shfmt",
 			},
 		},
 	},
