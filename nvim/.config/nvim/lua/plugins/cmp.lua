@@ -14,6 +14,10 @@ return {
 		local luasnip = require("luasnip")
 		local defaults = require("cmp.config.default")()
 
+		-- autopairs
+		local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+		cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+
 		return {
 			window = {
 				-- completion = cmp.config.window.bordered(),
