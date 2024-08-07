@@ -18,7 +18,7 @@ return {
 			local lspconfig = require("lspconfig")
 
 			local on_attach = function(_, bufnr)
-				-- stylua: ignore
+				-- stylua: ignore start
 				vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc="Goto Definition", silent = true, buffer = bufnr })
 				vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "References", silent = true, buffer = bufnr })
 				vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Goto Declaration", silent = true, buffer = bufnr, nowait = true })
@@ -34,6 +34,7 @@ return {
 				vim.keymap.set("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, { desc = "Remove workspace folder", silent = true, buffer = bufnr })
 				vim.keymap.set("n", "<leader>D", vim.lsp.buf.type_definition, { desc = "Type definition", silent = true, buffer = bufnr })
 				vim.keymap.set("n", "so", require("telescope.builtin").lsp_references, { desc = "LSP references", silent = true, buffer = bufnr })
+				-- stylua: ignore end
 			end
 
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
