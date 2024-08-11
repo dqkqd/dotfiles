@@ -22,3 +22,8 @@ keymap.set("n", "<leader>8", function() bufferline.go_to(8) end, { desc = "Goto 
 keymap.set("n", "<leader>9", function() bufferline.go_to(9) end, { desc = "Goto Buffer 9", silent = true })
 keymap.set("n", "<leader>0", function() bufferline.go_to(0) end, { desc = "Goto Buffer -1", silent = true })
 -- stylua: ignore end
+
+local neogit = require("neogit")
+-- stylua: ignore start
+keymap.set("n", "<leader>mg", function() neogit.open({ kind = "auto"}) end, { desc = "Open Neogit", silent= true })
+-- stylua: ignore end
