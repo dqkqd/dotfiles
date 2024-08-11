@@ -14,10 +14,6 @@
 	path = zsh/.zshcustom/custom/themes/catppuccin-zsh-syntax-highlighting
 	url = https://github.com/catppuccin/zsh-syntax-highlighting.git
 
-[submodule "zsh/.zshcustom/custom/plugins/zsh-autocomplete"]
-	path = zsh/.zshcustom/custom/plugins/zsh-autocomplete
-	url = https://github.com/marlonrichert/zsh-autocomplete.git
-
 [submodule "zsh/.zshcustom/custom/plugins/fast-syntax-highlighting"]
 	path = zsh/.zshcustom/custom/plugins/fast-syntax-highlighting
 	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git

@@ -97,7 +97,6 @@ plugins=(
   zsh-syntax-highlighting
   zsh-history-substring-search
   fast-syntax-highlighting
-  zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
