@@ -14,10 +14,6 @@
 	path = zsh/.zshcustom/custom/themes/catppuccin-zsh-syntax-highlighting
 	url = https://github.com/catppuccin/zsh-syntax-highlighting.git
 
-[submodule "zsh/.zshcustom/custom/themes/powerlevel10k"]
-	path = zsh/.zshcustom/custom/themes/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
-
 [submodule "zsh/.zshcustom/custom/plugins/zsh-autocomplete"]
 	path = zsh/.zshcustom/custom/plugins/zsh-autocomplete
 	url = https://github.com/marlonrichert/zsh-autocomplete.git
