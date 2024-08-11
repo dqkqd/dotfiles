@@ -134,7 +134,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 # catppuccin theme
-catppuccin_theme=latte
+catppuccin_theme=mocha
 source $ZSH_CUSTOM/themes/catppuccin-zsh-syntax-highlighting/themes/catppuccin_$catppuccin_theme-zsh-syntax-highlighting.zsh
 
 # zsh-syntax-highlighting
