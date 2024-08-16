@@ -97,6 +97,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-history-substring-search
   fast-syntax-highlighting
+  zoxide
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -143,3 +144,4 @@ source $ZSH_CUSTOM/themes/catppuccin-zsh-syntax-highlighting/themes/catppuccin_$
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
