@@ -38,4 +38,34 @@ return {
       end, { "i", "s" }),
     })
   end,
+  keys = {
+    {
+      "<leader>uQ",
+      function()
+        local cmp = require("cmp")
+        local config = cmp.get_config()
+
+        local codeium_index = -1
+        for i, source in ipairs(config.sources) do
+          if source.name == "codeium" then
+            codeium_index = i
+            break
+          end
+        end
+
+        if codeium_index ~= -1 then
+          table.remove(config.sources, codeium_index)
+        else
+          table.insert(config.sources, 1, {
+            name = "codeium",
+            group_index = 1,
+            priority = 100,
+          })
+        end
+
+        cmp.setup(config)
+      end,
+      desc = "Toggle Codeium",
+    },
+  },
 }
