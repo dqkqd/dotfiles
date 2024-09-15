@@ -145,3 +145,4 @@ source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(cprs_cli init)"
