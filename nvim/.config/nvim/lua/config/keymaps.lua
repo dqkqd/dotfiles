@@ -21,6 +21,8 @@ keymap.set("n", "<leader>7", function() bufferline.go_to(7) end, { desc = "Goto 
 keymap.set("n", "<leader>8", function() bufferline.go_to(8) end, { desc = "Goto Buffer 8", silent = true })
 keymap.set("n", "<leader>9", function() bufferline.go_to(9) end, { desc = "Goto Buffer 9", silent = true })
 keymap.set("n", "<leader>0", function() bufferline.go_to(0) end, { desc = "Goto Buffer -1", silent = true })
+keymap.set("n", "<leader>bl", function() bufferline.close_in_direction("right") end, {desc = "Delete buffer in the right", silent = true})
+keymap.set("n", "<leader>bh", function() bufferline.close_in_direction("left") end, {desc = "Delete buffer in the right", silent = true})
 -- stylua: ignore end
 
 local neogit = require("neogit")
