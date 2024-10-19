@@ -6,10 +6,6 @@
 	path = zsh/.zshcustom/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 
-[submodule "zsh/.zshcustom/custom/plugins/zsh-history-substring-search"]
-	path = zsh/.zshcustom/custom/plugins/zsh-history-substring-search
-	url = https://github.com/zsh-users/zsh-history-substring-search.git
-
 [submodule "zsh/.zshcustom/custom/themes/catppuccin-zsh-syntax-highlighting"]
 	path = zsh/.zshcustom/custom/themes/catppuccin-zsh-syntax-highlighting
 	url = https://github.com/catppuccin/zsh-syntax-highlighting.git

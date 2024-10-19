@@ -79,10 +79,7 @@ plugins=(
   docker
   # dotenv
   emoji
-  fzf
   git
-  # helm
-  history
   kubectl
   minikube
   npm
@@ -95,8 +92,8 @@ plugins=(
   vi-mode
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-history-substring-search
   fast-syntax-highlighting
+  fzf
   zoxide
 )
 
