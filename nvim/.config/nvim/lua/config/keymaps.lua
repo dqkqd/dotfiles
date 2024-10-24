@@ -29,3 +29,9 @@ local neogit = require("neogit")
 -- stylua: ignore start
 keymap.set("n", "<leader>mg", function() neogit.open({ kind = "auto"}) end, { desc = "Open Neogit", silent= true })
 -- stylua: ignore end
+
+keymap.set({ "n" }, "<C-k>", "<cmd>m-2<cr>", { desc = "Move line up", silent = true })
+keymap.set({ "n" }, "<C-j>", "<cmd>m+1<cr>", { desc = "Move line down", silent = true })
+-- not sure <cmd> doesn't work in this case
+keymap.set({ "v", "x" }, "<C-k>", ":'<,'>m-2<cr>gv=gv", { desc = "Move lines up", silent = true })
+keymap.set({ "v", "x" }, "<C-j>", ":'<,'>m'>+1<cr>gv=gv", { desc = "Move lines down", silent = true })
