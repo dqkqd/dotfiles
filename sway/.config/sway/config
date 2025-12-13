@@ -225,7 +225,5 @@ default_floating_border none
 font pango:monospace 9
 titlebar_border_thickness 0
 titlebar_padding 10 1
-smart_borders on
-smart_gaps on
 
 include /etc/sway/config.d/*

@@ -7,3 +7,18 @@ email = "dqkqdlot@gmail.com"
 [signing]
 behavior = "own"
 backend = "gpg"
+
+[ui]
+merge-editor = ["meld", "$left", "$base", "$right", "-o", "$output"]
+editor = "nvim"
+diff-editor = "meld-3"
+
+[template-aliases]
+'format_short_id(id)' = 'id.shortest()'
+
+[git]
+abandon-unreachable-commits = true
+colocate = true
+
+[revset-aliases]
+'immutable_heads()' = "builtin_immutable_heads() | (trunk().. & ~mine())"
