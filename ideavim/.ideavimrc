@@ -1,0 +1,60 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+set relativenumber
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+" Code Action (Equivalent to Alt+Enter/Option+Enter)
+map <space>ca <Action>(ShowIntentionActions)
+
+" Map <leader>cr to the Rename refactoring action
+map <leader>cr <Action>(Rename)
+
+" Go to next tab
+map ]b <Action>(NextTab)
+
+" Go to previous tab
+map [b <Action>(PreviousTab)
+
+" Go to specific tabs (1 through 9)
+map <space>1 <Action>(GoToTab1)
+map <space>2 <Action>(GoToTab2)
+map <space>3 <Action>(GoToTab3)
+map <space>4 <Action>(GoToTab4)
+map <space>5 <Action>(GoToTab5)
+map <space>6 <Action>(GoToTab6)
+map <space>7 <Action>(GoToTab7)
+map <space>8 <Action>(GoToTab8)
+map <space>9 <Action>(GoToTab9)
+
+map <space>oo :action IdeaVim.ReloadVimRc.reload<CR>
