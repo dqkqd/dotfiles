@@ -3,3 +3,7 @@
 [user]
 name = "Khanh Duong"
 email = "dqkqdlot@gmail.com"
+
+[signing]
+behavior = "own"
+backend = "gpg"
