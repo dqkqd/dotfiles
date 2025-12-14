@@ -23,6 +23,16 @@ output * bg ~/.config/sway/thank-you.png fill
 # output HDMI-A-1 resolution 1920x1080 position 1920,0
 output DP-2 mode 1920x1080@74.973Hz position 1920,0
 
+workspace 1 output DP-2
+workspace 2 output DP-2
+workspace 3 output DP-2
+workspace 4 output DP-2
+workspace 5 output DP-2
+workspace 6 output DP-2
+workspace 7 output DP-2
+workspace 8 output DP-2
+workspace 9 output eDP-1
+
 #
 # Example configuration:
 #
@@ -220,8 +230,6 @@ bar {
     swaybar_command waybar
 }
 
-default_border none
-default_floating_border none
 font pango:monospace 9
 titlebar_border_thickness 0
 titlebar_padding 10 1
