@@ -68,7 +68,6 @@ ZSH_THEME="robbyrussell"
 # https://github.com/zsh-users/zsh-completions?tab=readme-ov-file#oh-my-zsh
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 autoload -U compinit && compinit
-source "$ZSH/oh-my-zsh.sh"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -122,3 +121,4 @@ export EDITOR=nvim
 unsetopt autocd
 
 eval "$(zoxide init zsh)"
+source <(fzf --zsh)
