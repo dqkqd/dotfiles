@@ -35,7 +35,8 @@
 #backlight,
 #battery,
 #clock,
-#tray {
+#tray,
+#bluetooth {
   /* Add padding to the left and right of each module */
   padding: 0 6px;
 
