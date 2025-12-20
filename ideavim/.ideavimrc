@@ -12,6 +12,7 @@ set scrolloff=5
 " Do incremental searching.
 set incsearch
 set relativenumber
+set clipboard=unnamedplus
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
@@ -38,13 +39,18 @@ Plug 'tpope/vim-commentary'
 map <space>ca <Action>(ShowIntentionActions)
 
 " Map <leader>cr to the Rename refactoring action
-map <leader>cr <Action>(Rename)
+map <space>cr <Action>(RenameElement)
 
-" Go to next tab
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+
 map ]b <Action>(NextTab)
-
-" Go to previous tab
 map [b <Action>(PreviousTab)
+
+map <space>bl <Action>(CloseAllToTheRight)
+map <space>bh <Action>(CloseAllToTheLeft)
+
+map <space>ff <Action>(SearchEverywhere)
 
 " Go to specific tabs (1 through 9)
 map <space>1 <Action>(GoToTab1)
