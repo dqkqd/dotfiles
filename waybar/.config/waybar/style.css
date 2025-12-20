@@ -2,29 +2,29 @@
 
 /* General styling for the entire bar and text */
 * {
-    /* Set a standard font and size. Ensure a Nerd Font is installed 
+  /* Set a standard font and size. Ensure a Nerd Font is installed 
        (like 'JetBrainsMono Nerd Font') for the icons to render correctly. */
-    font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
-    font-size: 13px;
-    min-height: 0;
-    
+  font-family:
+    "Noto Sans Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands", monospace;
+  font-size: 13px;
+  min-height: 0;
 }
 
 /* Style for the Waybar container itself */
 #waybar {
-    background-color: @base; /* Solid Black Background */
-    border: none;
+  background-color: @base; /* Solid Black Background */
+  border: none;
 }
 
 /* Remove default padding from the outer edge of the bar */
 #waybar {
-    padding: 0;
+  padding: 0;
 }
 
 /* Style for all modules (individual items like clock, battery, etc.) */
 /* Apply padding to individual modules for separation */
-#workspaces, 
-#mode, 
+#workspaces,
+#mode,
 #pulseaudio,
 #network,
 #power-profiles-daemon,
@@ -36,65 +36,63 @@
 #battery,
 #clock,
 #tray {
-    /* Add padding to the left and right of each module */
-    padding: 0 6px; 
-    
-    /* Ensure all module backgrounds are black */
-    background-color: @crust;
+  /* Add padding to the left and right of each module */
+  padding: 0 6px;
 
-    color: @text; 
+  /* Ensure all module backgrounds are black */
+  background-color: @crust;
+
+  color: @text;
 }
-
 
 /* --- Module Specific Styles --- */
 
 /* 1. Sway Workspaces (buttons) */
 #workspaces button {
-    /* Default buttons */
-    background-color: @crust;
-    color: @text;
-    border: none;
-    padding: 0 6px;
+  /* Default buttons */
+  background-color: @crust;
+  color: @text;
+  border: none;
+  padding: 0 6px;
 }
 
 /* 2. Focused Workspace (The active one) */
 #workspaces button.focused {
-    /* Highlight the active workspace button */
-    color: @base;
-    background-color: @flamingo; 
-    font-weight: bold;
-    
-    /* Increase padding slightly for better visibility */
-    padding: 0 8px;
+  /* Highlight the active workspace button */
+  color: @base;
+  background-color: @flamingo;
+  font-weight: bold;
+
+  /* Increase padding slightly for better visibility */
+  padding: 0 8px;
 }
 
 /* 3. Urgent/Notification Workspace */
 #workspaces button.urgent {
-    background-color: @crust; /* Use a stark color for urgency */
-    color: @text;
+  background-color: @crust; /* Use a stark color for urgency */
+  color: @text;
 }
 
 /* 4. Sway Mode (like 'resize', 'move', etc.) */
 #mode {
-    background-color: @text; /* Invert colors to make it stand out */
-    color: @crust;
-    font-weight: bold;
+  background-color: @text; /* Invert colors to make it stand out */
+  color: @crust;
+  font-weight: bold;
 }
-
 
 /* --- Critical/Warning States (for battery and temperature) --- */
 
 /* Critical temperature (over 80°C) */
 #temperature.critical {
-    background-color: @red; /* Dark Red */
+  background-color: @red; /* Dark Red */
 }
 
 /* Critical battery (under 15%) */
 #battery.critical {
-    background-color: @red; /* Dark Red */
+  background-color: @red; /* Dark Red */
 }
 
 /* Low battery (under 30%) */
 #battery.warning {
-    background-color: @yellow; /* Brown/Dark Orange */
+  background-color: @yellow; /* Brown/Dark Orange */
 }
