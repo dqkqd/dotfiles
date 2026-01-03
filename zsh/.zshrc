@@ -78,6 +78,7 @@ plugins=(
   fzf
   git
   jj
+  rust
   vi-mode
   zoxide
   zsh-autosuggestions
