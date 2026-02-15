@@ -75,6 +75,7 @@ autoload -U compinit && compinit
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  deno
   fzf
   git
   jj
@@ -127,3 +128,4 @@ source <(fzf --zsh)
 . "$HOME/.local/bin/env"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
+. "$HOME/.deno/env"
