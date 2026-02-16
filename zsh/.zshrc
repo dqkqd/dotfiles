@@ -131,6 +131,8 @@ eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 . "$HOME/.deno/env"
 
+eval "$(just --completions zsh)"
+
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
