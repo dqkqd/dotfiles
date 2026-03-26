@@ -9,22 +9,11 @@ return {
           local foldername = vim.fn.fnamemodify(cwd, ":t")
           return foldername == "blog"
         end,
-        template = function(ctx)
-          local src = "img_" .. os.date("%s")
-          return string.format(
-            [[
-import %s from "%s";
-
-<Image
-  src={%s}
+        template = [[
+<CenteredImage
+  name="$FILE_NAME"
   alt="$CURSOR"
-  class="mx-auto"
 />]],
-            src,
-            ctx.file_path,
-            src
-          )
-        end,
         dir_path = function()
           local found = vim.fs.find("assets", {
             upward = false,
