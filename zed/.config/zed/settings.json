@@ -7,6 +7,40 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "title_bar": {
+    "show_user_menu": false,
+    "show_sign_in": false,
+  },
+  "disable_ai": true,
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "all",
+  },
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true,
+    },
+  },
+  "relative_line_numbers": "wrapped",
   "icon_theme": "Catppuccin Latte",
   "ui_font_size": 16,
   "buffer_font_size": 15,
@@ -17,11 +51,33 @@
     "dark": "One Dark",
   },
   "auto_install_extensions": {
-    "html": true,
-    "vue": true,
+    "astro": true,
     "catppuccin": true,
     "catppuccin-icons": true,
+    "dockerfile": true,
+    "html": true,
+    "marksman": true,
     "mdx": true,
-    "astro": true,
+    "sql": true,
+    "toml": true,
+    "vue": true,
+    "comment": true,
+    "csv": true,
+    "markdownlint": true,
+    "codebook": true,
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "languages": {
+    "Markdown": {
+      "completions": {
+        "words": "enabled",
+        "words_min_length": 3,
+        "lsp": true,
+        "lsp_fetch_timeout_ms": 0,
+        "lsp_insert_mode": "replace_suffix",
+      },
+    },
   },
 }
