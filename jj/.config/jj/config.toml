@@ -8,11 +8,6 @@ email = "dqkqdlot@gmail.com"
 behavior = "own"
 backend = "gpg"
 
-[ui]
-merge-editor = ["meld", "$left", "$base", "$right", "-o", "$output"]
-editor = "nvim"
-diff-editor = "meld-3"
-
 [template-aliases]
 'format_short_id(id)' = 'id.shortest()'
 
