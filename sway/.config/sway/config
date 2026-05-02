@@ -99,6 +99,10 @@ exec fcitx5 -d
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
+
+    # copy image to anki
+    bindsym $mod+Shift+p exec bash ~/.script/anki/ames.sh -s
+
 #
 # Moving around:
 #
