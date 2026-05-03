@@ -30,6 +30,28 @@ return {
           return name .. "_" .. timestamp
         end,
       },
+
+      -- setup for mdbook
+      {
+        trigger = function() -- returns true to enable
+          local mbbook = vim.fs.find("book.toml", {
+            upward = true,
+            path = vim.fn.expand("%:p:h"),
+          })[1]
+          if mbbook then
+            return true
+          end
+          return false
+        end,
+        dir_path = function()
+          local mbbook = vim.fs.find("book.toml", {
+            upward = true,
+            path = vim.fn.expand("%:p:h"),
+          })[1]
+          local root = vim.fs.dirname(mbbook)
+          return root .. "/src/images"
+        end,
+      },
     },
   },
 }
